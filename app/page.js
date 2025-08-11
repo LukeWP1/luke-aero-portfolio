@@ -703,7 +703,7 @@ export default function Page() {
         rich: [
           { type: "media", src: "/media/LeechMochups.jpg", caption: "Early concept mockups informed by biology." },
           { type: "media", src: "/media/LeechInitialPrototypes.jpg", caption: "First prints to prove tendon routing and sealing." },
-          { type: "media", src: "/media/LeechMoving.mp4", caption: "Traveling-wave actuation producing forward thrust in water." },
+          { type: "media", src: "/media/LeechMoving.mp4", caption: "Traveling-wave actuation producing forward thrust." },
 
           { type: "h", text: "Goal" },
           { type: "p", html: "Build a small underwater robot that moves like a leech so we can test ideas quickly and compare to biology." },
