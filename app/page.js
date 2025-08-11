@@ -786,8 +786,8 @@ export default function Page() {
           ],
         },
         rich: [
-          { type: "media", src: "/media/orca-ortho.mp4", caption: "Vortices forming and shedding through the stroke." },
-          { type: "media", src: "/media/orca-bot.mp4", caption: "Orca bottom view: wake structure and coherence." },
+          { type: "media", src: "/media/OrcaOrtho.GIF", caption: "Vortices forming and shedding through the stroke." },
+          { type: "media", src: "/media/OrcaBot.GIF", caption: "Orca bottom view: wake structure and coherence." },
           { type: "media", src: "/media/TunaTop.gif", caption: "Tuna schooling — top view." },
           { type: "media", src: "/media/TunaSide.gif", caption: "Tuna schooling — side view." },
 
