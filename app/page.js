@@ -452,7 +452,9 @@ export default function Page() {
           { type: "media", src: "/media/JSCHydroTest.jpg", caption: "AeroTech RMS-98/10240 motor casing during hydrostatic proof test to 1500 psig." },
           { type: "media", src: "/media/JSCIgnitionTest.mp4", caption: "Bench ignition test across ABS grain confirming spark gap and arc reliability." },
           { type: "media", src: "/media/InplaceIgntionTest.mp4", caption: "In-place ignition test with integrated plumbing and instrumentation." },
+          { type: "media", src: "/media/RegenNozzle.mp4", caption: "Regenerative cooling nozzle prototype with thermal study for future improvements." },
 
+          
           { type: "h", text: "Objective" },
           { type: "p", html: "Provide a simple, storable engine for <strong>LEO deorbit</strong>. We prioritized <strong>safety and handling</strong> near crew over raw performance, so we chose a <strong>nitrous oxide / ABS hybrid</strong>." },
 
