@@ -610,7 +610,7 @@ export default function Page() {
         },
         rich: [
           { type: "media", src: "/media/LangleyModel.jpg", caption: "Model disassembly: pressure plumbing and instrumentation checks." },
-          { type: "media", src: "/media/LangleyParts.jpg", caption: "Hardware prep for the static calibration cart." },
+          { type: "media", src: "/media/LangleyParts.jpg", caption: "Hardware prep for the static calibration cart. Involved disassembly and inspections before reassembly." },
           { type: "media", src: "/media/LangleyTestStand.jpg", caption: "Cart anchored to the concrete floor for stability during runs." },
           { type: "media", src: "/media/StratfordNozzles.jpg", caption: "Stratford nozzles: smooth internal contours for low boundary layer and reliable critical flow." },
 
