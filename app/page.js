@@ -660,7 +660,7 @@ export default function Page() {
         rich: [
           { type: "media", src: "/media/IntutiveMachines.jpg", caption: "Hot-fire campaign site where MPG data were collected." },
           { type: "media", src: "/media/MPGTest.jpg", caption: "Bench MPG setup at JSC for method checks." },
-          { type: "media", src: "/media/MPG.jpg", caption: "Piezo patches along the tank height to sense the mode shape." },
+          { type: "media", src: "/media/MPG.jpg", caption: "Piezo patches along the tank height to sense fuel." },
 
           { type: "h", text: "What It Is" },
           { type: "p", html: "Excite the tank, read the resulting vibration pattern (“mode shape”), and map that to <strong>remaining propellant</strong>. It’s lightweight and non-intrusive." },
