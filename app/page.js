@@ -516,7 +516,7 @@ export default function Page() {
           { type: "media", src: "/media/JSCRocketLookdown.jpg", caption: "Aft thermocouple holders to capture exhaust temperature safely." },
           { type: "media", src: "/media/JSCCalibrationTest.jpg", caption: "Bench checkout of the screw-jack load calibration assembly." },
           { type: "media", src: "/media/JSCInitialmockup.jpg", caption: "Whiteboard mock-up to size the calibration frame inside a ≤6 in envelope." },
-          { type: "media", src: "/media/CalibrationCAD.jpg", caption: "CAD of the jack + high-k spring + secondary load cell stack." },
+          { type: "media", src: "/media/CalibrationCad.jpg", caption: "CAD of the jack + high-k spring + secondary load cell stack." },
 
           { type: "h", text: "What It Had To Do" },
           { type: "p", html: "Hold ~<strong>330 lbf</strong> thrust with <strong>FOS ≥ 3</strong> and let the engine slide straight forward while locking every other direction." },
@@ -564,7 +564,7 @@ export default function Page() {
         },
         rich: [
           { type: "media", src: "/media/SolidRocketCad.jpg", caption: "Propulsion stack with adapter and centering rings." },
-          { type: "media", src: "/media/SolidrocketEjection.mp4", caption: "Ejection-charge test sequence on the ground." },
+          { type: "media", src: "/media/SolidRocketEjection.mp4", caption: "Ejection-charge test sequence on the ground." },
           { type: "media", src: "/media/SolidRocketHotfire.mp4", caption: "Liftoff — slow-motion." },
 
           { type: "h", text: "What We Achieved" },
@@ -784,7 +784,7 @@ export default function Page() {
           ],
         },
         rich: [
-          { type: "media", src: "/media/OrcaOrtho.gif", caption: "Orca: vortices forming and shedding through the stroke." },
+          { type: "media", src: "/media/OrcaOrtho.gif", caption: "Vortices forming and shedding through the stroke." },
           { type: "media", src: "/media/OrcaBot.gif", caption: "Orca bottom view: wake structure and coherence." },
           { type: "media", src: "/media/TunaTop.gif", caption: "Tuna schooling — top view." },
           { type: "media", src: "/media/TunaSide.gif", caption: "Tuna schooling — side view." },
