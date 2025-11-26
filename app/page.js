@@ -479,10 +479,6 @@ export default function Page() {
             "<strong>Injector study</strong> to tighten mixture distribution and stability.",
             "<strong>Ignition-timing</strong> study to reduce start transients.",
           ]},
-
-          { type: "details", blocks: [
-            { type: "p", html: "ABS grain ~2.3 lb with a center port for predictable burn-back. Helicoil-reinforced fasteners on the injector flange. Dual pressure sensors (chamber & pre-injection) and a thermocouple live in the forward bulkhead." },
-          ]},
         ],
       },
 
@@ -513,11 +509,10 @@ export default function Page() {
           ],
         },
         rich: [
-          { type: "media", src: "/media/JSCTestStandV1.jpg", caption: "Early rail-guided design allowed axial motion; rails proved hard to keep perfectly aligned." },
-          { type: "media", src: "/media/JSCTestStandFinal.jpg", caption: "Final design: clamp-guided, low-friction slide in the thrust direction only." },
+          { type: "media", src: "/media/JSCTestStandCAD.jpg", caption: "Final CAD of Test Stand - FEA showcased F.O.S of 3 for 300 pound load." },
+          { type: "media", src: "/media/JSCTestStandFinal.jpg", caption: "Real life design: clamp-guided, low-friction slide in the thrust direction only." },
           { type: "media", src: "/media/JSCRocketLookdown.jpg", caption: "Aft thermocouple holders to capture exhaust temperature safely." },
           { type: "media", src: "/media/JSCCalibrationTest.jpg", caption: "Bench checkout of the screw-jack load calibration assembly." },
-          { type: "media", src: "/media/JSCInitialmockup.jpg", caption: "Whiteboard mock-up to size the calibration frame inside a ≤6 in envelope." },
           { type: "media", src: "/media/CalibrationCad.jpg", caption: "CAD of the jack + high-k spring + secondary load cell stack." },
 
           { type: "h", text: "What It Had To Do" },
@@ -534,10 +529,6 @@ export default function Page() {
           { type: "p", html: "The T-feed plumbing preloads the system when pressurized, which skews thrust readings. Our compact jack system applies a known force so we can <strong>measure and subtract that bias</strong> before hot-fire." },
 
           { type: "callout", html: "Result: <strong>repeatable thrust numbers</strong> that line up with expectations, without hauling the setup to a separate calibration lab." },
-
-          { type: "details", blocks: [
-            { type: "p", html: "Jack is ½-20 (0.05 in/rev). The primary load cell only deflects ~0.1 in at full load, so a high-k spring in series expands useful travel for fine steps." },
-          ]},
         ],
       },
 
@@ -627,10 +618,6 @@ export default function Page() {
           ]},
 
           { type: "callout", html: "Outcome: reliable calibrations on our schedule and <strong>~$50k/year</strong> in avoided vendor costs." },
-
-          { type: "details", blocks: [
-            { type: "p", html: "At NTF I also worked model proof-loads, pump-down, GN₂ cold-flow ops, and test campaigns with dense pressure rakes." },
-          ]},
         ],
       },
 
@@ -674,10 +661,6 @@ export default function Page() {
           ]},
 
           { type: "callout", html: "Key finding: during firing the acoustic field can mask the signal, but <strong>right after cutoff</strong> the features return and level estimates line up again." },
-
-          { type: "details", blocks: [
-            { type: "p", html: "Mitigations: time-gating around cutoff, smarter sensor placement, and lock-in/synchronous techniques." },
-          ]},
         ],
       },
 
