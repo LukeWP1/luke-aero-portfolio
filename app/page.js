@@ -509,11 +509,11 @@ export default function Page() {
           ],
         },
         rich: [
-          { type: "media", src: "/media/JSCTestStandCAD.jpg", caption: "Final CAD of Test Stand - FEA showcased F.O.S of 3 for 300 pound load." },
-          { type: "media", src: "/media/JSCTestStandFinal.jpg", caption: "Real life design: clamp-guided, low-friction slide in the thrust direction only." },
-          { type: "media", src: "/media/JSCRocketLookdown.jpg", caption: "Aft thermocouple holders to capture exhaust temperature safely." },
-          { type: "media", src: "/media/JSCCalibrationTest.jpg", caption: "Bench checkout of the screw-jack load calibration assembly." },
-          { type: "media", src: "/media/CalibrationCad.jpg", caption: "CAD of the jack + high-k spring + secondary load cell stack." },
+          { type: "media", src: "/media/JSCTestStandCAD.jpg", caption: "Final CAD of Test Stand" },
+          { type: "media", src: "/media/JSCTestStandFinal.jpg", caption: "Real life Design" },
+          { type: "media", src: "/media/JSCCalibrationTest.jpg", caption: "Bench Checkout of Calibration Assembly." },
+          { type: "media", src: "/media/JSCRocketLookdown.jpg", caption: "Aft thermocouple for Exhaust Temp." },
+          { type: "media", src: "/media/CalibrationCad.jpg", caption: "CAD of Calibration Assembly." },
 
           { type: "h", text: "What It Had To Do" },
           { type: "p", html: "Hold ~<strong>330 lbf</strong> thrust with <strong>FOS ≥ 3</strong> and let the engine slide straight forward while locking every other direction." },
