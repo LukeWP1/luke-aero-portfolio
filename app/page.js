@@ -841,7 +841,7 @@ export default function Page() {
               LinkedIn
             </a>
             <a
-              href="/Luke_Pritchard_SpaceX.pdf"
+              href="/CV-LukePritchard.pdf"
               download
               className="inline-flex items-center gap-2 rounded-lg border border-blue-500 bg-blue-600 px-3 py-1.5 text-sm font-medium text-white hover:bg-blue-700"
             >
