@@ -531,6 +531,128 @@ export default function Page() {
           { type: "callout", html: "Result: <strong>repeatable thrust numbers</strong> that line up with expectations, without hauling the setup to a separate calibration lab." },
         ],
       },
+ /* =========================
+         3) BIER — SOFT ROBOTIC LEECH
+         ========================= */
+      {
+        id: "leech",
+        title: "BIER Lab: Soft Robotic Leech",
+        tags: ["Robotics"],
+        bullets: ["Tendon-driven motion", "Clear traveling wave up to 2 Hz", "Arduino control"],
+        ui: {
+          visible: 3,
+          gap: 16,
+          captionPx: 12,
+          bodyPx: 16,
+          bodyMaxCh: 88,
+          stats: [
+            { label: "Wave Rate", value: "≤ 2 Hz" },
+            { label: "Segments", value: "4" },
+            { label: "Actuators", value: "4 × servos" },
+            { label: "Body", value: "ABS + silicone skin" },
+          ],
+        },
+        rich: [
+          { type: "media", src: "/media/LeechMochups.jpg", caption: "Early concept mockups informed by biology." },
+          { type: "media", src: "/media/LeechInitialPrototypes.jpg", caption: "First prints to prove tendon routing and sealing." },
+          { type: "media", src: "/media/LeechMoving.mp4", caption: "Traveling-wave actuation producing forward thrust." },
+
+          { type: "h", text: "Goal" },
+          { type: "p", html: "Build a small underwater robot that moves like a leech so we can test ideas quickly and compare to biology." },
+
+          { type: "h", text: "How It Works" },
+          { type: "ul", items: [
+            "Four servos pull steel tendons through <strong>Bowden cables</strong> into a segmented ABS spine.",
+            "Software sets the phase offsets so the body “ripples” forward.",
+            "Electronics live in a waterproof head; a <strong>silicone skin</strong> covers the body.",
+          ]},
+
+          { type: "callout", html: "Result: clean, repeatable waves in water at up to <strong>2 Hz</strong>. Paper in prep for Fall." },
+        ],
+      },
+/* =========================
+         8) BIER — SCHOOLING TUNA & ORCA CFD
+         ========================= */
+      {
+        id: "cfd",
+        title: "BIER Lab: Schooling Tuna & Orca CFD",
+        tags: ["CFD"],
+        bullets: ["Schooling efficiency deltas", "Orca fin sweep effects", "AMR, in-house solver"],
+        ui: {
+          visible: 3,
+          gap: 16,
+          captionPx: 12,
+          bodyPx: 16,
+          bodyMaxCh: 90,
+          stats: [
+            { label: "Efficiency Gain", value: "~10%" },
+            { label: "Spacing", value: "0.1–0.2 BL" },
+            { label: "Mesh", value: "AMR near body/wake" },
+            { label: "Solver", value: "In-house (transient)" },
+
+          ],
+        },
+        rich: [
+          { type: "media", src: "/media/OrcaOrtho.GIF", caption: "Vortices forming and shedding through the stroke." },
+          { type: "media", src: "/media/OrcaBot.GIF", caption: "Orca bottom view: wake structure and coherence." },
+          { type: "media", src: "/media/TunaTop.gif", caption: "Tuna schooling — top view." },
+          { type: "media", src: "/media/TunaSide.gif", caption: "Tuna schooling — side view." },
+
+          { type: "h", text: "What We Asked" },
+          { type: "p", html: "Do fish save energy by swimming together, and what fin geometry matters for maneuvering?" },
+
+          { type: "h", text: "How We Studied It" },
+          { type: "ul", items: [
+            "Create geometry and motion from footage; smooth and triangulate.",
+            "Run an in-house Navier–Stokes solver; refine the mesh near the body and wake (<strong>AMR</strong>).",
+          ]},
+
+          { type: "callout", html: "Findings: a loose <strong>diamond phalanx</strong> can improve efficiency by ~<strong>10%</strong>; tighter packs boost group power output by a similar amount. For orca, <strong>pectoral sweep angle</strong> changes lift/drag and wake coherence." },
+        ],
+      },
+
+      /* =========================
+         5) MODAL PROPELLANT GAUGING
+         ========================= */
+      {
+        id: "mpg",
+        title: "Modal Propellant Gauging (Data Collection)",
+        tags: ["Sensors", "Test Ops"],
+        bullets: [
+          "Vibrate tank, read its “signature,” infer fill level",
+          "FFT feature tracking on hot-fire datasets",
+          "Practical limits & mitigation notes",
+        ],
+        ui: {
+          visible: 3,
+          gap: 16,
+          captionPx: 12,
+          bodyPx: 16,
+          bodyMaxCh: 84,
+          stats: [
+            { label: "Post-burn Error", value: "≈2–3%" },
+            { label: "Method", value: "FFT mode tracking" },
+            { label: "Sensors", value: "Piezo excite/receive" },
+            { label: "Environment", value: "Hot-fire" },
+          ],
+        },
+        rich: [
+          { type: "media", src: "/media/IntutiveMachines.jpg", caption: "Hot-fire campaign site where MPG data were collected." },
+          { type: "media", src: "/media/MPGTest.jpg", caption: "Bench MPG setup at JSC for method checks." },
+          { type: "media", src: "/media/MPG.jpg", caption: "Piezo patches along the tank height to sense fuel." },
+
+          { type: "h", text: "What It Is" },
+          { type: "p", html: "Excite the tank, read the resulting vibration pattern (“mode shape”), and map that to <strong>remaining propellant</strong>. It’s lightweight and non-intrusive." },
+
+          { type: "h", text: "What I Did" },
+          { type: "ul", items: [
+            "Led hot-fire data collection and processing.",
+            "Used FFTs to track the features that correlate with fill level.",
+          ]},
+
+          { type: "callout", html: "Key finding: during firing the acoustic field can mask the signal, but <strong>right after cutoff</strong> the features return and level estimates line up again." },
+        ],
+      },
 
       /* =========================
          3) UVA SOUNDING ROCKET
@@ -621,89 +743,7 @@ export default function Page() {
         ],
       },
 
-      /* =========================
-         5) MODAL PROPELLANT GAUGING
-         ========================= */
-      {
-        id: "mpg",
-        title: "Modal Propellant Gauging (Data Collection)",
-        tags: ["Sensors", "Test Ops"],
-        bullets: [
-          "Vibrate tank, read its “signature,” infer fill level",
-          "FFT feature tracking on hot-fire datasets",
-          "Practical limits & mitigation notes",
-        ],
-        ui: {
-          visible: 3,
-          gap: 16,
-          captionPx: 12,
-          bodyPx: 16,
-          bodyMaxCh: 84,
-          stats: [
-            { label: "Post-burn Error", value: "≈2–3%" },
-            { label: "Method", value: "FFT mode tracking" },
-            { label: "Sensors", value: "Piezo excite/receive" },
-            { label: "Environment", value: "Hot-fire" },
-          ],
-        },
-        rich: [
-          { type: "media", src: "/media/IntutiveMachines.jpg", caption: "Hot-fire campaign site where MPG data were collected." },
-          { type: "media", src: "/media/MPGTest.jpg", caption: "Bench MPG setup at JSC for method checks." },
-          { type: "media", src: "/media/MPG.jpg", caption: "Piezo patches along the tank height to sense fuel." },
-
-          { type: "h", text: "What It Is" },
-          { type: "p", html: "Excite the tank, read the resulting vibration pattern (“mode shape”), and map that to <strong>remaining propellant</strong>. It’s lightweight and non-intrusive." },
-
-          { type: "h", text: "What I Did" },
-          { type: "ul", items: [
-            "Led hot-fire data collection and processing.",
-            "Used FFTs to track the features that correlate with fill level.",
-          ]},
-
-          { type: "callout", html: "Key finding: during firing the acoustic field can mask the signal, but <strong>right after cutoff</strong> the features return and level estimates line up again." },
-        ],
-      },
-
-      /* =========================
-         6) BIER — SOFT ROBOTIC LEECH
-         ========================= */
-      {
-        id: "leech",
-        title: "BIER Lab: Soft Robotic Leech",
-        tags: ["Robotics"],
-        bullets: ["Tendon-driven motion", "Clear traveling wave up to 2 Hz", "Arduino control"],
-        ui: {
-          visible: 3,
-          gap: 16,
-          captionPx: 12,
-          bodyPx: 16,
-          bodyMaxCh: 88,
-          stats: [
-            { label: "Wave Rate", value: "≤ 2 Hz" },
-            { label: "Segments", value: "4" },
-            { label: "Actuators", value: "4 × servos" },
-            { label: "Body", value: "ABS + silicone skin" },
-          ],
-        },
-        rich: [
-          { type: "media", src: "/media/LeechMochups.jpg", caption: "Early concept mockups informed by biology." },
-          { type: "media", src: "/media/LeechInitialPrototypes.jpg", caption: "First prints to prove tendon routing and sealing." },
-          { type: "media", src: "/media/LeechMoving.mp4", caption: "Traveling-wave actuation producing forward thrust." },
-
-          { type: "h", text: "Goal" },
-          { type: "p", html: "Build a small underwater robot that moves like a leech so we can test ideas quickly and compare to biology." },
-
-          { type: "h", text: "How It Works" },
-          { type: "ul", items: [
-            "Four servos pull steel tendons through <strong>Bowden cables</strong> into a segmented ABS spine.",
-            "Software sets the phase offsets so the body “ripples” forward.",
-            "Electronics live in a waterproof head; a <strong>silicone skin</strong> covers the body.",
-          ]},
-
-          { type: "callout", html: "Result: clean, repeatable waves in water at up to <strong>2 Hz</strong>. Paper in prep for Fall." },
-        ],
-      },
-
+     
       /* =========================
          7) BIER — 1/25th WATER CHANNEL MODEL
          ========================= */
@@ -746,46 +786,7 @@ export default function Page() {
         ],
       },
 
-      /* =========================
-         8) BIER — SCHOOLING TUNA & ORCA CFD
-         ========================= */
-      {
-        id: "cfd",
-        title: "BIER Lab: Schooling Tuna & Orca CFD",
-        tags: ["CFD"],
-        bullets: ["Schooling efficiency deltas", "Orca fin sweep effects", "AMR, in-house solver"],
-        ui: {
-          visible: 3,
-          gap: 16,
-          captionPx: 12,
-          bodyPx: 16,
-          bodyMaxCh: 90,
-          stats: [
-            { label: "Efficiency Gain", value: "~10%" },
-            { label: "Spacing", value: "0.1–0.2 BL" },
-            { label: "Mesh", value: "AMR near body/wake" },
-            { label: "Solver", value: "In-house (transient)" },
-
-          ],
-        },
-        rich: [
-          { type: "media", src: "/media/OrcaOrtho.GIF", caption: "Vortices forming and shedding through the stroke." },
-          { type: "media", src: "/media/OrcaBot.GIF", caption: "Orca bottom view: wake structure and coherence." },
-          { type: "media", src: "/media/TunaTop.gif", caption: "Tuna schooling — top view." },
-          { type: "media", src: "/media/TunaSide.gif", caption: "Tuna schooling — side view." },
-
-          { type: "h", text: "What We Asked" },
-          { type: "p", html: "Do fish save energy by swimming together, and what fin geometry matters for maneuvering?" },
-
-          { type: "h", text: "How We Studied It" },
-          { type: "ul", items: [
-            "Create geometry and motion from footage; smooth and triangulate.",
-            "Run an in-house Navier–Stokes solver; refine the mesh near the body and wake (<strong>AMR</strong>).",
-          ]},
-
-          { type: "callout", html: "Findings: a loose <strong>diamond phalanx</strong> can improve efficiency by ~<strong>10%</strong>; tighter packs boost group power output by a similar amount. For orca, <strong>pectoral sweep angle</strong> changes lift/drag and wake coherence." },
-        ],
-      },
+      
     ],
     []
   );
