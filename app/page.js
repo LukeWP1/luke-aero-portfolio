@@ -607,7 +607,7 @@ export default function Page() {
             "Run an in-house Navier–Stokes solver; refine the mesh near the body and wake (<strong>AMR</strong>).",
           ]},
 
-          { type: "callout", html: "Findings: a loose <strong>diamond phalanx</strong> can improve efficiency by ~<strong>10%</strong>; tighter packs boost group power output by a similar amount. For orca, <strong>pectoral sweep angle</strong> changes lift/drag and wake coherence." },
+          { type: "callout", html: "Findings: a loose <strong>diamond phalanx</strong> can improve efficiency by ~<strong>20%</strong>; tighter packs boost group power output by a similar amount. For orca, <strong>pectoral sweep angle</strong> changes lift/drag and wake coherence." },
         ],
       },
 
